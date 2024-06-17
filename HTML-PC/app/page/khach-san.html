@@ -1,0 +1,628 @@
+<!-- build:title -->Adavido
+<!-- /build:title -->
+<!-- build:content -->
+<section class="tab-menu-folder">
+    <a href="#" class="active">Đặt phòng</a>
+    <a href="#">Giữ chỗ của tôi</a>
+</section>
+<section class="main-container clearfix">
+    <div class="wrap-search">
+        <h2 class="title txt_20 bold mb16">Đặt phòng</h2>
+        <div class="tab-menu flex">
+            <a href="#tab-building" class="active">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#building"></use>
+                </svg>
+                <span>Khách sạn Vinpearl</span>
+            </a>
+            <a href="#tab-building2">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#building"></use>
+                </svg>
+                <span>Khách sạn thường</span>
+            </a>
+        </div>
+        <div class="tab-content relative">
+            <div id="tab-building">
+                <div class="flex-row building-grid mb8">
+                    <div class="address-w flex">
+                        <div class="item form-search">
+                            <a class="wrap" data-toggle="collapse" href="#">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#address"></use>
+                                    </svg>
+                                    <span>Điểm đến</span>
+                                </div>
+                                <input type="text" class="form-control input-search" id="" placeholder="Thành phố, khách sạn, điểm đến">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="date-w flex">
+                        <div class="item">
+                            <a class="wrap" data-toggle="collapse" href="#">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#date"></use>
+                                    </svg>
+                                    <span>Nhận phòng</span>
+                                </div>
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#date"></use>
+                                        </svg>
+                                    <input class="datepicker-input form-control" type="text" name="birthday" value="27/9/2022">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="note">
+                            1
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#night2"></use>
+                            </svg>
+                        </div>
+                        <div class="item">
+                            <a class="wrap" data-toggle="collapse" href="#">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#date"></use>
+                                    </svg>
+                                    <span>Trả phòng</span>
+                                </div>
+                                <div class="text">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#date"></use>
+                                    </svg>
+                                    <input class="form-control datepicker-input" type="text" name="birthday" value="24/10/2022" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guest-w flex">
+                        <div class="item">
+                            <a class="wrap" data-toggle="collapse" href="#collapseGuest">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#group"></use>
+                                    </svg>
+                                    <span>Số khách, hạng ghế</span>
+                                </div>
+                                <div class="text">1 khách, hạng thương gia</div>
+                            </a>
+                            <div class="info-passenger collapse" id="collapseGuest">
+                                <div class="row">
+                                    <div class="col-md-6 mb16">
+                                        <div class="check-list">
+                                            <div class="check-list_item">
+                                                <div class="mb10"><strong>Đi một mình</strong></div>
+                                                <div class="gray">1 phòng, 1 người lớn</div>
+                                            </div>
+                                            <div class="check-list_item">
+                                                <div class="mb10"><strong>Đi cặp đôi /2 người</strong></div>
+                                                <div class="gray">1 phòng, 2 người lớn</div>
+                                            </div>
+                                            <div class="check-list_item active">
+                                                <div><strong>Đi theo nhóm</strong></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 line-left off-line-mb">
+                                        <div class="flex mb16 space-between align-center">
+                                            <div>Phòng</div>
+                                            <div class="sl_giohang">
+                                                <div class="input-group-prepend">
+                                                    <button class="giam_sl" id="minus-btn">-</button>
+                                                </div>
+                                                <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                                                <div class="input-group-prepend">
+                                                    <button class="tang_sl" id="plus-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex mb16 space-between align-center">
+                                            <div>Người lớn</div>
+                                            <div class="sl_giohang">
+                                                <div class="input-group-prepend">
+                                                    <button class="giam_sl" id="minus-btn">-</button>
+                                                </div>
+                                                <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                                                <div class="input-group-prepend">
+                                                    <button class="tang_sl" id="plus-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex mb16 space-between align-center">
+                                            <div>Em bé <span class="gray">(&#60; 2 tuổi)</span></div>
+                                            <div class="sl_giohang">
+                                                <div class="input-group-prepend">
+                                                    <button class="giam_sl" id="minus-btn">-</button>
+                                                </div>
+                                                <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                                                <div class="input-group-prepend">
+                                                    <button class="tang_sl" id="plus-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="warning-note bland">
+                                            <div><strong>Bạn cần từ 10 phòng trở lên?</strong></div>
+                                            <p class="gray mb8">Chat ngay với Advigo để nhận được ưu đãi</p>
+                                            <a class="btn-default" href="#">Chat ngay</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" title="Tìm kiếm" class="btn-search btn-default">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="tab-building2" style="display: none">
+                <div class="flex-row building-grid mb16">
+                    <div class="address-w flex">
+                        <div class="item form-search">
+                            <a class="wrap" data-toggle="collapse" href="#">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#address"></use>
+                                            </svg>
+                                    <span>Điểm đến</span>
+                                </div>
+                                <input type="text" class="form-control input-search" id="" placeholder="Thành phố, khách sạn, điểm đến">
+                            </a>
+                            <div class="list-address content-search">
+                                <ul>
+                                    <li>
+                                        <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#address"></use>
+                                            </svg>
+                                        <div class="address">
+                                            <div class="name">Hà Nội</div>
+                                            <div>HAN - Sân bay Nội Bài</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#address"></use>
+                                            </svg>
+                                        <div class="address">
+                                            <div class="name">Hồ Chí Minh</div>
+                                            <div>SGN - Sân bay Tân Sơn Nhất</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#address"></use>
+                                            </svg>
+                                        <div class="address">
+                                            <div class="name">Đà Nẵng</div>
+                                            <div>DAD - Sân bay Quốc tế Đà Nẵng</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#address"></use>
+                                            </svg>
+                                        <div class="address">
+                                            <div class="name">Hà Nội</div>
+                                            <div>HAN - Sân bay Nội Bài</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#address"></use>
+                                            </svg>
+                                        <div class="address">
+                                            <div class="name">Hồ Chí Minh</div>
+                                            <div>SGN - Sân bay Tân Sơn Nhất</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#address"></use>
+                                            </svg>
+                                        <div class="address">
+                                            <div class="name">Đà Nẵng</div>
+                                            <div>DAD - Sân bay Quốc tế Đà Nẵng</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="date-w flex">
+                        <div class="item">
+                            <a class="wrap" data-toggle="collapse" href="#">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#date"></use>
+                                            </svg>
+                                    <span>Nhận phòng</span>
+                                </div>
+                                <div class="text">T3, 20 Tháng 6</div>
+                            </a>
+                        </div>
+                        <div class="note">
+                            1
+                            <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#night2"></use>
+                                    </svg>
+                        </div>
+                        <div class="item">
+                            <a class="wrap" data-toggle="collapse" href="#">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#date"></use>
+                                            </svg>
+                                    <span>Trả phòng</span>
+                                </div>
+                                <div class="text">T3, 20 Tháng 6</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="guest-w flex">
+                        <div class="item">
+                            <a class="wrap" data-toggle="collapse" href="#">
+                                <div class="flex icon">
+                                    <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#group"></use>
+                                            </svg>
+                                    <span>Số khách, phòng</span>
+                                </div>
+                                <div class="text">1 phòng, 2 người lớn, 0 trẻ em</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fillter-grid mb16">
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="mb8">Khoảng giá</div>
+                            <div class="form-group mb16">
+                                <select class="select2" name="" style="width: 100%;">
+                                    <option value="">Chọn</option>
+                                    <option value="">10 triệu</option>
+                                    <option value="">20 triệu</option>
+                                    <option value="">30 triệu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="mb8">Điều kiện hoàn hủy</div>
+                            <div class="form-group mb16">
+                                <select class="select2" name="" style="width: 100%;">
+                                    <option value="">Chọn</option>
+                                    <option value="">10 triệu</option>
+                                    <option value="">20 triệu</option>
+                                    <option value="">30 triệu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="mb8">Loại cơ sở lưu trú</div>
+                            <div class="form-group mb16">
+                                <select class="select2" name="" style="width: 100%;">
+                                    <option value="">Chọn</option>
+                                    <option value="">10 triệu</option>
+                                    <option value="">20 triệu</option>
+                                    <option value="">30 triệu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="mb8">Quyền lợi đi kèm</div>
+                            <div class="form-group mb16">
+                                <select class="select2" name="" style="width: 100%;">
+                                    <option value="">Chọn</option>
+                                    <option value="">10 triệu</option>
+                                    <option value="">20 triệu</option>
+                                    <option value="">30 triệu</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex align-center justify-end">
+                    <a class="clear bold color-orange" href="">
+                                    Xóa bộ lọc
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#refresh"></use>
+                                    </svg>
+                                </a>
+                    <a class="btn-default ml-3" href="#">Áp dụng</a>
+                </div>
+            </div>
+            <!-- Thông tin tìm kiếm nâng cao -->
+            <div class="jss-slide suggest-address open">
+                <div class="jss-slide__left">
+                    <div class="head">
+                        <span>Tìm kiếm gần đây</span>
+                        <button class="btn" tabindex="0" type="button"><span class="MuiButton-label">Xóa lịch sử tìm kiếm</span></button>
+                    </div>
+                    <ul class="history">
+                        <li>
+                            <div class="btn-default">
+                                <svg width="20" height="20" fill="none"><path d="M10 6.667V10l1.667 1.667" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.542 9.167a7.5 7.5 0 11.416 3.333m-.416 4.167V12.5h4.166" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </div>
+                            <div class="content">
+                                <div class="name key">Hà Nội</div>
+                                <div class="color-gray">Việt Nam</div>
+                            </div>
+                            <span class="jss1149">3527 <svg width="20" height="20" fill="none" style="margin-left: 4px;"><path d="M2.5 17.5h15M7.5 6.667h.833M7.5 10h.833M7.5 13.333h.833M11.666 6.667h.834M11.666 10h.834M11.666 13.333h.834M4.167 17.5V4.167A1.667 1.667 0 015.832 2.5h8.334a1.667 1.667 0 011.666 1.667V17.5" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                        </li>
+                        <li>
+                            <div class="btn-default">
+                                <svg width="20" height="20" fill="none"><path d="M10 6.667V10l1.667 1.667" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.542 9.167a7.5 7.5 0 11.416 3.333m-.416 4.167V12.5h4.166" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">Hà Nội</div>
+                                <div class="color-gray">Việt Nam</div>
+                            </div>
+                            <span class="jss1149">3527 <svg width="20" height="20" fill="none" style="margin-left: 4px;"><path d="M2.5 17.5h15M7.5 6.667h.833M7.5 10h.833M7.5 13.333h.833M11.666 6.667h.834M11.666 10h.834M11.666 13.333h.834M4.167 17.5V4.167A1.667 1.667 0 015.832 2.5h8.334a1.667 1.667 0 011.666 1.667V17.5" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                        </li>
+                        <li>
+                            <div class="btn-default">
+                                <svg width="20" height="20" fill="none"><path d="M10 6.667V10l1.667 1.667" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.542 9.167a7.5 7.5 0 11.416 3.333m-.416 4.167V12.5h4.166" stroke="#718096" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </div>
+                            <div class="content">
+                                <div class="name">Bảo tàng Hồ Chí Minh</div>
+                                <div class="color-gray">Việt Nam</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="jss1152"><span class="jss1153">Chưa có tìm kiếm gần đây</span></div>
+                </div>
+                <div class="jss-slide__right">
+                    <h2 class="lbl">Địa điểm nổi bật</h2>
+                    <div class="list grid grid__8">
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                        <a class="itemt" href="#">
+                            <span class="thumb_img thumb_5x5">
+                                <img src="images/graphics/destination3.jpg" alt="">
+                            </span>
+                            <h3>Hồ Chí Minh</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="flex">
+        <div class="col-main mb16">
+            <div class="bg-white pd-20 radius10">
+                <div class="head-title">
+                    <h2 class="title txt_20 bold mb0">Quỹ phòng của tôi</h2>
+                    <a class="detail" href="#">Chi tiết</a>
+                </div>
+                <div class="gray mb5">Tổng số tiền đã ký quỹ</div>
+                <div class="flex align-center mb16">
+                    <div class="bold color-green txt_24 mr-3">23,000,0000 VNĐ</div>
+                    <div class="medium color-green">
+                        <img src="images/icons/Add.svg" alt="" style="margin: -2px 5px 0 0;"> Nạp quỹ
+                    </div>
+                </div>
+                <div class="line-bottom mb16"></div>
+                <h2 class="title txt_16 bold mb16">Lịch sử ký quỹ</h2>
+                <div class="table-responsive table-default">
+                    <table class="table table-nowrap" border="1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ngày đặt</th>
+                                <th scope="col">Mã booking</th>
+                                <th scope="col">Tên đơn hàng</th>
+                                <th scope="col">Trạng thái</th>
+                                <th scope="col">Tên khách hàng</th>
+                                <th scope="col">Check in</th>
+                                <th scope="col">Check out</th>
+                                <th scope="col">Check out</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5/4/2021</td>
+                                <td>M000021587</td>
+                                <td>Fussion Resort Phú Quốc</td>
+                                <td>Hoàn thành</td>
+                                <td>Trần Ngọc Đại</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                            </tr>
+                            <tr>
+                                <td>5/4/2021</td>
+                                <td>M000021587</td>
+                                <td>Fussion Resort Phú Quốc</td>
+                                <td>Hoàn thành</td>
+                                <td>Trần Ngọc Đại</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                            </tr>
+                            <tr>
+                                <td>5/4/2021</td>
+                                <td>M000021587</td>
+                                <td>Fussion Resort Phú Quốc</td>
+                                <td>Hoàn thành</td>
+                                <td>Trần Ngọc Đại</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                            </tr>
+                            <tr>
+                                <td>5/4/2021</td>
+                                <td>M000021587</td>
+                                <td>Fussion Resort Phú Quốc</td>
+                                <td>Hoàn thành</td>
+                                <td>Trần Ngọc Đại</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                                <td>5/4/2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-300 mb16">
+            <div class="bg-white pd-20 radius10" style="height: 100%">
+                <div class="head-title">
+                    <h2 class="title txt_20 bold mb0">Lịch bay & khuyến mại</h2>
+                    <a class="detail" href="#">Xem thêm</a>
+                </div>
+                <div class="list-article">
+                    <div class="article-itemt">
+                        <div class="article-thumb">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/thumb2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="title_new">
+                                <a href="#">VN Trân trọng thông báo lịch bay SGN/HAN-C</a>
+                            </h3>
+                            <div class="date-post">13/7/2022</div>
+                        </div>
+                    </div>
+                    <div class="article-itemt">
+                        <div class="article-thumb">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/thumb3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="title_new">
+                                <a href="#">VN Trân trọng thông báo lịch bay SGN/HAN-C</a>
+                            </h3>
+                            <div class="date-post">13/7/2022</div>
+                        </div>
+                    </div>
+                    <div class="article-itemt">
+                        <div class="article-thumb">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/thumb4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="title_new">
+                                <a href="#">VN Trân trọng thông báo lịch bay SGN/HAN-C</a>
+                            </h3>
+                            <div class="date-post">13/7/2022</div>
+                        </div>
+                    </div>
+                    <div class="article-itemt">
+                        <div class="article-thumb">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/thumb1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="title_new">
+                                <a href="#">VN Trân trọng thông báo lịch bay SGN/HAN-C</a>
+                            </h3>
+                            <div class="date-post">13/7/2022</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- /build:content -->
+<!-- build:script2 -->
+<script>
+    $('.title-page').text('Khách sạn')
+</script>
+<!-- /build:script2 -->

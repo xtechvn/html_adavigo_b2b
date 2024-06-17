@@ -1,0 +1,138 @@
+<!-- build:title -->Adavido
+<!-- /build:title -->
+<!-- build:content -->
+<section class="step-menu">
+    <div class="step step1 active success">
+        <span class="number">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#checkmark"></use>
+            </svg>
+            1
+        </span> Chọn phương thức
+    </div>
+    <div class="step step2">
+        <span class="number">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#checkmark"></use>
+            </svg>
+            2
+        </span> Xác nhận thông tin chuyển khoản
+    </div>
+
+</section>
+<section class="main-container clearfix">
+    <h2 class="bold txt_24 mb16 mt10">Phương thức thanh toán</h2>
+    <div class="flex mb16">
+        <div class="col-main">
+            <div class="bg-white pd-20 radius10 mb16">
+                <strong class="bold txt_16">Hướng dẫn chuyển khoản</strong>
+                <div class="gray txt_12 mb16">Vui lòng chọn một ngân hàng bên dưới để chuyển khoản:</div>
+                <ul class="list-bank grid grid__6">
+                    <li class="active">
+                        <img src="images/nganhang/nhang_16.png" alt="">
+                        <span>Vietcombank</span>
+                    </li>
+                    <li class="">
+                        <img src="images/nganhang/nhang_6.png" alt="">
+                        <span>BID</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-300">
+            <div class="bg-white pd-20 radius10 mb16">
+                <div class="head-title">
+                    <h2 class="title txt_20 bold mb0">Thông tin thanh toán</h2>
+                </div>
+                <div class="row mb12">
+                    <div class="col-5 gray">Tổng tiền</div>
+                    <div class="col-7 bold text-right">9,600,000 VND</div>
+                </div>
+                <div class="line-bottom mb12"></div>
+                <div class="row mb12">
+                    <div class="col-5 bold txt_16">Thành tiền</div>
+                    <div class="col-7 bold color-green txt_18 text-right">9,600,000 VND</div>
+                    <div class="col-12 gray text-right txt_12">Đã bao gồm thuế, phí, VAT</div>
+                </div>
+                <button type="submit" class="btn btn-default full size">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-content" style="max-width: 400px;margin: 0 auto;">
+        <div class="modal-header">
+            <h4 class="modal-title">Thông tin chuyển khoản</h4>
+            <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <div class="modal-body">
+            <div class="bg-agray pd-16 radius10 mb16">
+                <div><img src="images/nganhang/tech.png" alt=""></div>
+                <div>Ngân hàng Thương mại cổ phần Kỹ Thương Việt Nam</div>
+                <div class="mb5">Chi nhánh Đông Đô</div>
+                <div class="gray">Tên tài khoản</div>
+                <div class="bold txt_16">Công ty Cổ phần Thương mại và Dịch vụ Quốc tế Đại Việt</div>
+                <div class="line-bottom mt5 mb5"></div>
+                <div class="gray">Số tài khoản</div>
+                <div class="bold txt_16">19131835226016</div>
+                <div class="line-bottom mt5 mb5"></div>
+                <div class="gray">Nội dung chuyển khoản</div>
+                <div class="bold txt_16">FP0TTm617</div>
+            </div>
+            <button type="submit" class="btn btn-default size full">Xác nhận</button>
+        </div>
+    </div>
+
+    <div class="mb24"></div>
+
+    <div class="modal-content" style="max-width: 520px;margin: 0 auto;">
+        <div class="modal-body">
+            <div class="mb16"><img src="images/icons/deadline.png" alt=""></div>
+            <div class="txt_24 bold mb10 color-orange">Chờ xác nhận thanh toán</div>
+            <div class="gray">
+                <p>Đơn hàng của bạn sẽ được xác nhận thanh toán sau khi Adavigo nhận được thông báo từ ngân hàng</p>
+                <p>Sau khi thanh toán đơn hàng bàng tài khoản ngân hàng quý khách chụp lại hoá đơn thanh toán rồi gửi về Adavigo. Adavigo sẽ xác nhận và liên hệ với quý khách </p>
+            </div>
+            <div class="mb5"><strong>Ảnh UNC nạp tiền</strong></div>
+            <div class="mb10 note-warring">
+                <svg class="icon-svg mr-1">
+                <use xlink:href="images/icons/icon.svg#warring"></use>
+            </svg> Lưu ý: Vui lòng gửi lại hình ảnh hoá đơn thanh toán
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">
+                <div class="mb24">
+                    <img src="images/icons/Upload.svg" alt="">
+                </div>
+                <div class="bold mb10">Drag & drop files or <a>Browse</a></div>
+                <div class="gray">Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT</div>
+            </label>
+            </div>
+            <button type="submit" class="btn btn-default gray size" style="width: 240px;">Xác nhận & hoàn tất</button>
+            <div class="custom-file">
+                <div class="list">
+                    <div class="item">
+                        <img src="images/graphics/nap-tien.png" alt="">
+                        <a class="delete" href="#">
+                            <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#close"></use>
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default size" style="width: 240px;">Xác nhận & hoàn tất</button>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+<!-- /build:content -->
+<!-- build:script2 -->
+<script>
+    $('.title-page').text('Nạp tiền')
+</script>
+<!-- /build:script2 -->
