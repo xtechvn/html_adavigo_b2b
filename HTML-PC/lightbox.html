@@ -226,6 +226,104 @@
     <p data-toggle="modal" data-target="#myModal11">Popup Chưa hoàn thành!</p>
     <p data-toggle="modal" data-target="#myModal12">Popup Chi tiết</p>
     <p data-toggle="modal" data-target="#myModal13">Thông tin chuyển khoản </p>
+    <p data-toggle="modal" data-target="#myModal14">Kiểm tra tình trạng phòng</p>
+    <p data-toggle="modal" data-target="#myModal15">Kiểm tra tình trạng phòng - Gửi yêu cầu thành công</p>
+
+    <!--POPUP Kiểm tra tình trạng phòng -->
+    <div class="modal fade" id="myModal14">
+        <div class="modal-dialog" style="max-width: 1100px;">
+            <div class="modal-content">
+                <div class="modal-header">
+
+
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="text-center mb24">
+                        <h4 class="modal-title">Kiểm tra tình trạng phòng</h4>
+                        <p>Vui lòng nhập đủ thông tin để tiếp tục</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-12 form-group mb-3 mb-md-0">
+                            <label class="gray">Loại phòng</label>
+                            <input type="email" class="form-control" id="" value="1">
+                        </div>
+                        <div class="col-md-2 col-12 form-group mb-3 mb-md-0">
+                            <label class="gray">Gói</label>
+                            <select class="select2" name="" style="width: 100%;">
+                                <option value="">Gói</option>
+                                <option value="">Đại lý</option>
+                                <option value="">Cộng tác viên</option>
+                                <option value="">Mice/Corp/Doanh nghiệp</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-12 form-group mb-3 mb-md-0">
+                            <label class="gray">Thời gian sử dụng</label>
+                            <select class="select2" name="" style="width: 100%;">
+                                <option value="">08/01/2024</option>
+                                <option value="">Đại lý</option>
+                                <option value="">Cộng tác viên</option>
+                                <option value="">Mice/Corp/Doanh nghiệp</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1 col-12 form-group mb-3 mb-md-0">
+                            <label class="gray d-none d-md-block" style="opacity: 0;">Số lượng</label>
+                            <div class="sl_giohang">
+                                <div class="input-group-prepend">
+                                    <button class="giam_sl" id="minus-btn">-</button>
+                                </div>
+                                <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                                <div class="input-group-prepend">
+                                    <button class="tang_sl" id="plus-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 form-group mb-3 mb-md-0">
+                            <label class="gray">Thành tiền (tạm tính)</label>
+                            <input type="text" class="form-control" disabled id="" value="1">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-default success min2 my-3">+ Thêm phòng</a>
+                    <div class="form-group mb-3 mb-md-0">
+                        <label class="gray">Ghi chú</label>
+                        <textarea rows="4" class="form-control" ></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-default">Gửi</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POPUP Kiểm tra tình trạng phòng -->
+    <div class="modal fade" id="myModal15">
+        <div class="modal-dialog" style="max-width: 550px;">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img class="mb16" src="images/icons/success.png" alt="">
+                    <h4 class="modal-title">Gửi yêu cầu thành công</h4>
+                    <div class="txt_16 mb16">
+                        Chúng tôi sẽ liên hệ lại trong vài phút.<br />
+                        Nếu bạn cần được hỗ trợ ngay, hãy liên hệ <b>Đinh Thanh Bình</b> <br />
+                        qua mail <a href="" class="color-blue">binh.dt@adavigo.com</a> hoặc qua số <a href=""
+                            class="color-blue">0123456789</a><br />
+                    </div>
+                    <div class="line-bottom mb16"></div>
+                    <div class="d-flex flex-nowrap gap_10">
+                        <button type="submit" class="btn btn-default gray full">Quay về trang chủ</button>
+                        <button type="submit" class="btn btn-default full">Theo dõi yêu cầu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--POPUP Thêm hành lý ký gửi -->
     <div class="modal fade" id="myModal0">
@@ -385,7 +483,8 @@
                         <label class="gray" for="exampleInputEmail1">Số tiền chuyền</label>
                         <div class="relative currency-gr">
                             <span class="currency">VND</span>
-                            <input type="email" class="form-control is-invalid text-left txt_18 bold" id="" value="3,000,000 ">
+                            <input type="email" class="form-control is-invalid text-left txt_18 bold" id=""
+                                value="3,000,000 ">
                             <div class="invalid-feedback">Vượt quá số tiền trong tài khoản</div>
                         </div>
                     </div>
@@ -517,7 +616,8 @@
                                         <img src="images/icons/Upload.svg" alt="">
                                     </div>
                                     <div class="bold mb10">Drag & drop files or <a>Browse</a></div>
-                                    <div class="gray">Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT</div>
+                                    <div class="gray">Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT
+                                    </div>
                                 </label>
                             </div>
                         </div>
@@ -640,13 +740,15 @@
                                                     <svg class="icon-svg">
                                                         <use xlink:href="images/icons/icon.svg#ticket">
                                                         </use>
-                                                    </svg> Miễn phí đổi vé (thu chênh lệch tiền vé nếu có), thời hạn 3h so với giờ khởi hành.
+                                                    </svg> Miễn phí đổi vé (thu chênh lệch tiền vé nếu có), thời hạn 3h
+                                                    so với giờ khởi hành.
                                                 </li>
                                                 <li>
                                                     <svg class="icon-svg">
                                                         <use xlink:href="images/icons/icon.svg#hanh-ly">
                                                         </use>
-                                                    </svg> Hoàn bảo lưu tiền vé tối đa 180 ngày và tính phí theo chính sách hãng, thời hạn 24h so với giờ khởi hành.
+                                                    </svg> Hoàn bảo lưu tiền vé tối đa 180 ngày và tính phí theo chính
+                                                    sách hãng, thời hạn 24h so với giờ khởi hành.
                                                 </li>
                                                 <li>
                                                     <svg class="icon-svg">
@@ -819,7 +921,9 @@
                             </h3>
                             <p class="mb10">422 m2 | 6 người lớn, 6 em bé</p>
                             <div>
-                                The 422m² Villa 3 Bedroom is generously sized and thoughtfully equipped with everything you need for a comfortable stay including LCD TV, high speed WIFI, private hot tub, etc. Along with a stunning ocean view, our Villa 3 Bedrooms is perfect for families,
+                                The 422m² Villa 3 Bedroom is generously sized and thoughtfully equipped with everything
+                                you need for a comfortable stay including LCD TV, high speed WIFI, private hot tub, etc.
+                                Along with a stunning ocean view, our Villa 3 Bedrooms is perfect for families,
                                 groups or business travellers with a good taste and appreciation of luxurious design.
                             </div>
                         </div>
@@ -863,8 +967,12 @@
                     <div class="txt_16 mb24">DEFAULT_GUARANTEE</div>
                     <div class="bold black">Chính sách hoàn hủy</div>
                     <div class="txt_16 mb24">
-                        • Low Season - Free cancellation before 7 days - Cancellation charge is 50% before 4 - 6 days - Cancellation charge is 100% after 3 days or no-show • High Season - Free cancellation before 21 days - Cancellation charge is 50% before 8 - 20 days - Cancellation
-                        charge is 100% after 7 days or no-show • Peak Season - Free cancellation before 45 days - Cancellation charge is 50% before 31 - 44 days - Cancellation charge is 100% after 30 days or no-show
+                        • Low Season - Free cancellation before 7 days - Cancellation charge is 50% before 4 - 6 days -
+                        Cancellation charge is 100% after 3 days or no-show • High Season - Free cancellation before 21
+                        days - Cancellation charge is 50% before 8 - 20 days - Cancellation
+                        charge is 100% after 7 days or no-show • Peak Season - Free cancellation before 45 days -
+                        Cancellation charge is 50% before 31 - 44 days - Cancellation charge is 100% after 30 days or
+                        no-show
                     </div>
                 </div>
             </div>
@@ -929,11 +1037,16 @@
                     <div class="note-popup scrollbar-inner mb16" style="max-height: 180px;">
                         <p><strong>Lưu ý:</strong></p>
                         <ul class="gray dotted">
-                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
-                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
-                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
-                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
-                            <li>Bạn có thể thực hiện chuyển khoản thanh toán tại quầy giao dịch ngân hàng, qua mobile banking, cây ATM, hoặc chuyển khoản qua internet <a class="color-blue">tại đây</a>.</li>
+                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội
+                                dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
+                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội
+                                dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
+                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội
+                                dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
+                            <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội
+                                dung chuyển khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
+                            <li>Bạn có thể thực hiện chuyển khoản thanh toán tại quầy giao dịch ngân hàng, qua mobile
+                                banking, cây ATM, hoặc chuyển khoản qua internet <a class="color-blue">tại đây</a>.</li>
                         </ul>
                     </div>
                     <div class="line-bottom mb16"></div>
@@ -969,7 +1082,7 @@
     <!-- build:script -->
     
 <script>
-    $(".toggle-password").click(function() {
+    $(".toggle-password").click(function () {
         $(this).toggleClass("fa-eye fa-eye-slash");
         var input = $($(this).attr("toggle"));
         if (input.attr("type") == "password") {
@@ -980,7 +1093,7 @@
     });
 
     // Data select2 Price
-    $(function() {
+    $(function () {
         // data user 1
         var dataPrice1 = [{
             id: 1,
@@ -998,7 +1111,7 @@
             id: 4,
             kg: "25kg",
             vnd: "+ 76.000 đ",
-        }, ];
+        },];
         // data user 2
         var dataPrice2 = [{
             id: 1,
@@ -1016,18 +1129,18 @@
             id: 4,
             kg: "25kg",
             vnd: "+ 76.000 đ",
-        }, ];
+        },];
 
         $("#select-price1").select2({
             minimumResultsForSearch: -1,
             data: dataPrice1,
-            escapeMarkup: function(markup) {
+            escapeMarkup: function (markup) {
                 return markup;
             },
-            templateResult: function(data) {
+            templateResult: function (data) {
                 return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
             },
-            templateSelection: function(data) {
+            templateSelection: function (data) {
                 return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
             },
         });
@@ -1035,13 +1148,13 @@
         $("#select-price2").select2({
             minimumResultsForSearch: -1,
             data: dataPrice2,
-            escapeMarkup: function(markup) {
+            escapeMarkup: function (markup) {
                 return markup;
             },
-            templateResult: function(data) {
+            templateResult: function (data) {
                 return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
             },
-            templateSelection: function(data) {
+            templateSelection: function (data) {
                 return `<div class="flex space-between align-center"><span>${data.kg}</span><span class="color-green">${data.vnd}</span></div>`;
             },
         });
