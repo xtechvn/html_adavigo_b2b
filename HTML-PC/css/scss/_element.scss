@@ -4249,3 +4249,18 @@
         }
     }
 }
+.info-basic {
+    .ava {
+        width: 60px;
+        margin-right: 10px;
+        .thumb_img {
+            border-radius: 50%;
+        }
+    }
+    .content {
+        .name {
+            color: #056BD3;
+            font-weight: bold;
+        }
+    }
+}
