@@ -228,7 +228,74 @@
     <p data-toggle="modal" data-target="#myModal13">Thông tin chuyển khoản </p>
     <p data-toggle="modal" data-target="#myModal14">Kiểm tra tình trạng phòng</p>
     <p data-toggle="modal" data-target="#myModal15">Kiểm tra tình trạng phòng - Gửi yêu cầu thành công</p>
+    <p data-toggle="modal" data-target="#myModal16">Voucher</p>
+    <!--POPUP Voucher -->
+    <div class="modal fade form-voucher" id="myModal16">
+        <div class="modal-dialog" style="max-width: 640px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="title-popup">Chọn voucher</h4>
 
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="content">
+                        <div class="code-voucher">
+                            <div class="form-code">
+                                <input type="text" placeholder="Nhập mã Voucher" />
+                                <button type="submit" title="Tìm kiếm" class="btn-search btn-default">
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list-voucher">
+                            <div class="item item-voucher">
+                                <div class="img">
+                                    <div>
+                                        <span class="des">Đối tác chiến lược</span>
+                                        <div class="percent">-15%</div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h4 class="name">Giảm đậm gơn 20%</h4>
+                                    <p class="date">HSD: 7/9/2022</p>
+                                    <a href="" class="link">Điều kiện </a>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" id="radio" class="radio" />
+                                    <label for="radio"></label>
+                                </div>
+                            </div>
+                            <div class="item item-voucher disabled">
+                                <div class="img">
+                                    <div>
+                                        <!-- <span class="des">Đối tác chiến lược</span> -->
+                                        <div class="percent">-15%</div>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h4 class="name">Giảm đậm gơn 20%</h4>
+                                    <p class="date">HSD: 7/9/2022</p>
+                                    <a href="" class="link">Điều kiện </a>
+                                </div>
+                                <div class="box-radio">
+                                    <input type="radio" id="radio" class="radio" />
+                                    <label for="radio"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <a href="" class="btn-default  gray btn-back">Trở lại</a>
+                        <a href="" class="btn-default btn-base btn-save">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--POPUP Kiểm tra tình trạng phòng -->
     <div class="modal fade" id="myModal14">
         <div class="modal-dialog" style="max-width: 1100px;">
@@ -286,7 +353,7 @@
                     </div>
                     <a href="#" class="btn-default success min2 my-3">+ Thêm phòng</a>
                      -->
-                     <div class="table-responsive mb24">
+                    <div class="table-responsive mb24">
                         <table class="table table-nowrap text-center">
                             <thead>
                                 <tr>
@@ -302,7 +369,9 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td style="width: 30%;"><input type="email" class="form-control" id="" value="Oceanview - Lorem ipsum dolor sit amet, consectetur adipiscing elit"></td>
+                                    <td style="width: 30%;"><input type="email" class="form-control" id=""
+                                            value="Oceanview - Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                                    </td>
                                     <td>
                                         <div class="flexbox align-center">
                                             <a href="#" class="color-blue fa fa-plus-circle mr-2"></a>
@@ -312,18 +381,25 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><input type="text" class="form-control mb-2" id="" value="08/01/2024 -  09/01/2024">
-                                        <input type="text" class="form-control" id="" value="08/01/2024 -  09/01/2024"></td>
-                                    <td class="text-right"><input type="text" class="form-control text-right" id="" value="1"></td>
-                                    <td class="text-right"><input type="text" class="form-control text-right" id="" value="1"></td>
-                                    <td class="text-right"><input type="text" readonly class="form-control text-right mb-2" id="" value="1,500,000">
-                                       <input type="text" readonly class="form-control text-right" id="" value="1,500,000">
+                                    <td><input type="text" class="form-control mb-2" id=""
+                                            value="08/01/2024 -  09/01/2024">
+                                        <input type="text" class="form-control" id="" value="08/01/2024 -  09/01/2024">
                                     </td>
-                                   
+                                    <td class="text-right"><input type="text" class="form-control text-right" id=""
+                                            value="1"></td>
+                                    <td class="text-right"><input type="text" class="form-control text-right" id=""
+                                            value="1"></td>
+                                    <td class="text-right"><input type="text" readonly
+                                            class="form-control text-right mb-2" id="" value="1,500,000">
+                                        <input type="text" readonly class="form-control text-right" id=""
+                                            value="1,500,000">
+                                    </td>
+
                                 </tr>
                                 <tr class="bg-white">
                                     <td></td>
-                                    <td class="text-left"><a href="#" class="btn-default blue-line min2">+ Thêm phòng</a></td>
+                                    <td class="text-left"><a href="#" class="btn-default blue-line min2">+ Thêm
+                                            phòng</a></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -333,9 +409,9 @@
                             </tbody>
                         </table>
                     </div>
-                     <div class="form-group mb-3">
+                    <div class="form-group mb-3">
                         <label class="gray">Ghi chú</label>
-                        <textarea rows="4" class="form-control" ></textarea>
+                        <textarea rows="4" class="form-control"></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-default">Gửi</button>
